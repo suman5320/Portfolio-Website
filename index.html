@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46d362382a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <section class="hero_section">
+            <div class="nav-container">
+                <nav>
+                    <h1 class="logo">SM.</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#services">service</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+            <div class="text_container">
+                <h2 class="text"><span class="lg_text">Hi,</span >I am <span id="name_text"> Suman Mondal</span ></h2>
+                <h1 class="lg_text">A Data Scientist and ML Engineer</h1>
+            </div>
+        </section>
+        
+    </div>
+    <!-- -------------About------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Polish_20230501_121137978.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi, I’m Suman Mondal — a problem solver at heart, driven by data, algorithms, and endless curiosity.
+
+                        As a Data Scientist and Machine Learning Engineer, I specialize in turning complex data into meaningful insights and building ML systems that make a real difference. Whether it's finding patterns in chaos, optimizing models for performance, or deploying scalable AI solutions, I thrive on turning challenges into clear, actionable results. My goal is simple: make machine learning work where it matters most</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('academics')">Academics</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>ML Engineer</span> <br>Building and Optimizing ML models </li>
+                            <li><span>Web Developer</span> <br>Web  Developement</li>
+                            <li><span>Problem Solving</span> <br>solved 200+ leetcode problems </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <p>No experience :( </p>
+                    </div>
+                    <div class="tab-contents" id="academics">
+                        <ul>
+                            <li><span>2022-2026</span> <br>B-TECH in TMSL Kolkata</li>
+                            <li><span>2018-2019</span> <br>Hs - Bankura Zilla School</li>
+                            <li><span>2017</span> <br> 10th board - Bishnupur High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------service-------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Service</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Machine Learning</h2>
+                    <p>I build intelligent systems that learn from data—whether it’s predictive models, pattern recognition, or end-to-end AI pipelines.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Dev</h2>
+                    <p>From sleek front-ends to robust back-ends, I create responsive, user-friendly websites that deliver great digital experiences.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Logo Design</h2>
+                    <p>I craft simple, memorable logos that reflect your brand’s identity and leave a lasting impression.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+            
+        </div>
+        <!-- -------------portfolio----------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/olena-sergienko-dIMJWLx1YbE-unsplash.jpg">
+                        <div class="layers">
+                            <h3>Social Media App</h3>
+                            <p>A sleek, user-friendly social platform designed for seamless messaging, media sharing, and community engagement in real time.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/daniel-korpai-iopITwyUcTA-unsplash.jpg">
+                        <div class="layers">
+                            <h3>Music App</h3>
+                            <p>Stream and organize your favorite tracks with a clean, intuitive interface—complete with custom playlists and audio visualizers.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg">
+                        <div class="layers">
+                            <h3>Online Shopping App</h3>
+                            <p>A responsive e-commerce app built for smooth browsing, smart recommendations, and secure, one-click checkout experiences.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        
+        <!-- --------contact------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>suman9902@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>9064514392</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100022250701964&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com/mondal_suman30?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/suman5320"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/suman-mondal-421934254"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/SumanMondal_CV.pdf" download class="btn btn2">Download CV</a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright <i class="fa-regular fa-copyright"></i> suman. Made with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = 0;
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxre_iF8h54PVcWDnfXqEAsRWSMryEzrK36MQpI7X9oFMb6lDSN6pLJylMD7X4zRUbb/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
